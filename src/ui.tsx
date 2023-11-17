@@ -20,9 +20,15 @@ function App() {
          setValue('')
     };
 
-//   React.useEffect(() => {
-//     console.log(value)
-//   },[value])
+    function checkURL() {
+        const pattern = /(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?\/[a-zA-Z0-9]{2,}|((https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)|(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})?/g;
+        console.log(pattern.test(value))
+
+    }
+
+  React.useEffect(() => {
+    checkURL()
+  },[value])
 
     onmessage = ({ data }) => {
         if (data.pluginMessage === 'Component selected') {
@@ -60,15 +66,12 @@ function App() {
                        
                             <TextInput
                                 type="url"
-                                label="Documentation link"
-                                placeholder="https://example.com"
+                                placeholder="https://amazingdesignsystem.com/components"
                                 value={value}
                                 onChange={(event) => setValue(event.currentTarget.value)}
                                 pattern="/(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?\/[a-zA-Z0-9]{2,}|((https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)|(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})?/g;
                                 "
                                 error={buttonState ? true : false}
-                                required
-                               
                             />
                     
                     <Space />

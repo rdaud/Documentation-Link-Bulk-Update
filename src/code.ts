@@ -1,6 +1,6 @@
 
 figma.showUI(__html__,{ themeColors: true});
-figma.ui.resize(350,300);
+figma.ui.resize(350,200);
 
 
 figma.on('selectionchange', () => {
