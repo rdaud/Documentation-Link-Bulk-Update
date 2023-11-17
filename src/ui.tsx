@@ -3,8 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import { MantineProvider } from '@mantine/core';
 import { Flex, Container, Button, Text, TextInput, Space } from "@mantine/core";
 
-const SHEETSID = '1jb8ubvvMH7EwfbQZT-0FoxUBz0xAIdU5Jz_wQEv5z_Y' 
-const API = 'AIzaSyC6myUfcVsqQd22TEibFYuHK1rx0LdKePc'
+
 
 function App() {
 
