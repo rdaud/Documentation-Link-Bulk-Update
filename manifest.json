@@ -1,10 +1,14 @@
 {
   "name": "Documentation Link Bulk Update",
-  "id": "1192634481599681338",
+  "id": "1308821784145741309",
   "api": "1.0.0",
   "main": "dist/code.js",
   "editorType": [
     "figma"
   ],
-  "ui": "dist/ui.html"
+  "ui": "dist/ui.html",
+  "networkAccess": { "allowedDomains": ["none"] }
 }
+
+
+
