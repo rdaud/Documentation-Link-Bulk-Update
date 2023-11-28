@@ -151,7 +151,7 @@ function App() {
        
         <Group justify="space-between" preventGrowOverflow={false} style={{"width": "100%"}}>
             {/* <Text c="dimmed" size="xs" style={{"fontSize": "8px"}}> Created and maintained by <a href="https://www.linkedin.com/rdaud">Rodrigo Daud</a></Text> */}
-            <Text c="dimmed" size="xs" style={{"fontSize": "8px"}}> v1.0.0</Text>
+            <Text c="dimmed" size="xs" style={{"fontSize": "8px"}}> v1.0.1</Text>
         </Group>
        
 
